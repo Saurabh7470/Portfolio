@@ -1,0 +1,21 @@
+.Sidebar{
+    width: 50%;
+    border-radius: 15px;
+    .NavContaint{
+        margin-top: 25px;
+        text-decoration: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 300;
+        font-size: medium;
+     }
+
+     .nav-link{
+        box-sizing: border-box;
+        box-shadow: inset;
+        padding: 25px;
+     }
+
+     .Link{
+        background-color: aqua;
+     }
+}
