@@ -1,0 +1,30 @@
+.Home{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(220, 220, 220, 0.5);
+  justify-content: center;
+}
+
+.text-containt{
+   margin-top: 80px;
+   margin-bottom: 10px;
+   text-align: center;
+}
+
+.imagesection{
+   background-image: url(../Images/wallpaper.jpeg);
+}
+@media screen and (max-width: 600px) {
+   .Image_section{
+    display: none;
+   }
+
+   .text-containt{
+      text-align: center;
+      text-transform: capitalize;
+      text-shadow: 5px;
+      font-size: smaller;
+      font-weight: 200;
+   }
+}

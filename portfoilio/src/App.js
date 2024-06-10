@@ -1,4 +1,3 @@
-import { Container } from 'react-bootstrap';
 import './App.css';
 import { Outlet } from 'react-router';
 import Footer from './MainComponent/Footer';
@@ -8,12 +7,8 @@ function App() {
   return (
     <>
       <AppNavbar/>
-      <Container fluid>
-        <Container className='MainContaint'>
-           <Outlet/>
-        </Container>
-          <Footer/>
-      </Container>
+        <Outlet/>
+      <Footer/>
     </>
   );
 }
