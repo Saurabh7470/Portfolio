@@ -1,5 +1,5 @@
 import { Col, Container, Image, Row, Table } from "react-bootstrap";
-import AbImage from "../Images/About.jpeg";
+import AbImage from "/project/portfoilio/src/Images/About.jpeg";
 import './About.css';
 function About(){
     return(

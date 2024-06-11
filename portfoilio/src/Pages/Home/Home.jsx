@@ -2,10 +2,10 @@ import { Button, Col, Container, Row, Image } from "react-bootstrap";
 import './Home.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown} from "@fortawesome/free-solid-svg-icons";
-import Profile from "../Images/wallpaper.jpeg";
-import About from "./About";
-import Portfolio from "./Portfolio";
-import Resume from "./Resume";
+import Profile from "/project/portfoilio/src/Images/wallpaper.jpeg";
+import About from "../About/About";
+import Portfolio from "../Portfolio/Portfolio";
+import Resume from "../Resume/Resume";
 
 function Home(){
 

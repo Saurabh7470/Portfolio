@@ -7,7 +7,7 @@ import { Route, Routes, } from 'react-router';
 import { SSRProvider } from 'react-bootstrap';
 import { BrowserRouter } from 'react-router-dom';
 import Error from './MainComponent/Error';
-import Home from './Pages/Home';
+import Home from './Pages/Home/Home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
