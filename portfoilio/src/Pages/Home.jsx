@@ -3,10 +3,21 @@ import './Home.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown} from "@fortawesome/free-solid-svg-icons";
 import Profile from "../Images/wallpaper.jpeg";
+import About from "./About";
+import Portfolio from "./Portfolio";
+import Resume from "./Resume";
+
 function Home(){
+
+  const ScrolltoBottom = (sectionid) => {
+    const element = document.getElementById(sectionid);
+    if(element){
+      element.scrollIntoView({behavior:"smooth", top:"0"});
+    }
+  }
     return(
         <>
-        <Container className="xxl">
+        <section className="xxl" id="Home">
             <Row>
                 <Col md={6} xs={12}>
                     <Container>
@@ -14,7 +25,7 @@ function Home(){
                         <h4>HEY! I AM</h4>
                         <h1>SAURABH SEN</h1>
                         <h3>I'm a Software Developer</h3>
-                        <Button variant="outline-warning" to={"About"}><FontAwesomeIcon icon={faArrowDown}/> Learn More</Button>
+                        <Button variant="outline-warning" onClick={()=> ScrolltoBottom('About')}><FontAwesomeIcon icon={faArrowDown} /> Learn More</Button>
                         </Container>
                     </Container>
                 </Col>
@@ -24,7 +35,16 @@ function Home(){
                   </Container>
                 </Col>
             </Row>
-        </Container>
+        </section>
+        <section id="About">
+           <About/>
+        </section>
+        <section id="Portfolio">
+            <Portfolio/>
+        </section>
+        <section id="Resume">
+            <Resume/>
+        </section>
         </>
     )
 }

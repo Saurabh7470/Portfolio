@@ -5,12 +5,22 @@ import { Link } from "react-router-dom";
 import { faBars } from "@fortawesome/free-solid-svg-icons/faBars";
 import './Appnavbar.css';
 import { useEffect, useState } from "react";
+
 function AppNavbar(){
-  const [menuOpen, setMenuOpen] = useState(false)
-  const [Class, setClass] = useState("navbar")
+ const [menuOpen, setMenuOpen] = useState(false)
+ const [Class, setClass] = useState("navbar")
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
+  }
+  const toggelClose =(sectionId)=> {
+    const element = document.getElementById(sectionId);
+    if(element){
+    const elementPostion = element.getBoundingClientRect().top + window.pageYOffset;
+    const offsetPostion = elementPostion - 50;
+      element.scrollIntoView({behavior:"smooth", top:offsetPostion});
+    }
+    setMenuOpen(false);
   }
   const handleClose = () => setMenuOpen(false)
   useEffect(()=> {
@@ -39,10 +49,10 @@ function AppNavbar(){
                   </Offcanvas.Header>
                   <Offcanvas.Body>
                     <Nav className="justify-content-center flex-grow-1 pe-10 mt-0">
-                      <Link to={'/'} className={'nav-link'} onClick={toggleMenu}>Home</Link>
-                      <Link to={'Home'} className="nav-link" onClick={toggleMenu}>About</Link>
-                      <Link to={'Home'} className="nav-link" onClick={toggleMenu}>Portfolio</Link>
-                      <Link to={'Home'} className="nav-link" onClick={toggleMenu}>Resume</Link>
+                      <Link to={'/'} className={'nav-link'} onClick={()=> toggelClose('Home')}>Home</Link>
+                      <Link to={'/'} className="nav-link" onClick={()=> toggelClose('About')}>About</Link>
+                      <Link to={'/'} className="nav-link" onClick={()=> toggelClose('Portfolio')}>Portfolio</Link>
+                      <Link to={'/'} className="nav-link" onClick={()=> toggelClose('Resume')}>Resume</Link>
                     </Nav>
                     <Nav className="justify-content-end">
                       <Link to={'Contact'}><Button variant="success" style={{borderRadius:"0px",}}>
