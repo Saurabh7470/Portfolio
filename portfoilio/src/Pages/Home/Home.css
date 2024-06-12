@@ -12,6 +12,11 @@
    text-align: center;
 }
 
+.skills{
+   margin-top: 2px;
+   margin-bottom: 5px;
+}
+
 @media screen and (max-width: 600px) {
    .Image_section{
     display: none;

@@ -14,7 +14,7 @@ function About(){
                         <Image src={AbImage} className="image_logo" alt="#" fluid/>
                      </Container>
                   </Col>
-                  <Col xs={12} md={6}>
+                  <Col xs={12} md={6} style={{backgroundColor:"grey", color:"white"}}>
                   <div className="infoAbout">
                      <h1>About Me</h1>
                      <h3>Software Developer</h3>
@@ -24,7 +24,7 @@ function About(){
                         atque facere doloribus magnam hic perferendis.
                      </h6>
                      <br/>
-                     <Table className="Details">
+                     <Table className="Details" style={{backgroundColor:"grey"}}>
                         <tbody>
                            <tr>
                               <td>Name :</td>
