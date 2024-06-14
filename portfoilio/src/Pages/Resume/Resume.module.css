@@ -1,0 +1,12 @@
+.card{
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(90, 88, 88);
+    color: rgb(180, 180, 180);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.heder{
+    padding: 5px;
+    border-radius: 5px;
+}

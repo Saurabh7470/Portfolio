@@ -11,7 +11,7 @@ function AppNavbar(){
  const [Class, setClass] = useState("navbar")
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen)
+    setMenuOpen(!menuOpen)  
   }
   const toggelClose =(sectionId)=> {
     const element = document.getElementById(sectionId);
