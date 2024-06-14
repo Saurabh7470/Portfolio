@@ -1,9 +1,13 @@
 .Home{
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  background-color: rgba(220, 220, 220, 0.5);
-  justify-content: center;
+   width: 95%;
+}
+
+.Heading{
+   text-align: center;
+   padding-top: 40px;
+   padding-bottom: 40px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   text-decoration: underline;
 }
 
 .text-containt{

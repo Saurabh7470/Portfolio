@@ -13,9 +13,6 @@ const Skills = () => {
 
     return(
      <>
-     <div className="heading">
-         <h3>Skills</h3>
-     </div>
      <Container className="skill-section">
         <Row>
             {data.map((item)=>{
@@ -27,7 +24,7 @@ const Skills = () => {
                                 <hp>{item.name}</hp>
                                 <span>
                                     <OverlayTrigger placement="bottom" delay={{show:200}} overlay={<Tooltip>{item.rate+'%'}</Tooltip>}>
-                                            <ProgressBar now={item.rate} variant="info"/>
+                                            <ProgressBar now={item.rate} variant="info" style={{height:"8px"}}/>
                                     </OverlayTrigger>
                                 </span>
                             </Stack>

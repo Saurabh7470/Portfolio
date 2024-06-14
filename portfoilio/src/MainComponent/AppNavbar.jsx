@@ -52,7 +52,7 @@ function AppNavbar(){
                       <Link to={'/'} className={'nav-link'} onClick={()=> toggelClose('Home')}>Home</Link>
                       <Link to={'/'} className="nav-link" onClick={()=> toggelClose('About')}>About</Link>
                       <Link to={'/'} className="nav-link" onClick={()=> toggelClose('Skills')}>Skills</Link>
-                      <Link to={'/'} className="nav-link" onClick={()=> toggelClose('Portfolio')}>Portfolio</Link>
+                      <Link to={'/'} className="nav-link" onClick={()=> toggelClose('Portfolio')}>Projects</Link>
                       <Link to={'/'} className="nav-link" onClick={()=> toggelClose('Resume')}>Resume</Link>
                     </Nav>
                     <Nav className="justify-content-end">

@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown} from "@fortawesome/free-solid-svg-icons";
 import Profile from "../../Images/wallpaper.jpeg";
 import About from "../About/About";
-import Portfolio from "../Portfolio/Portfolio";
 import Resume from "../Resume/Resume";
 import Skills from "../Skills/Siklls";
+import Projects from "../Projects/Projects";
 
 function Home(){
   const ScrolltoBottom = (sectionid) => {
@@ -17,7 +17,8 @@ function Home(){
   }
     return(
         <>
-        <section className="xxl" id="Home">
+        <Container className="Home">
+        <section className="xl" id="Home">
             <Row>
                 <Col md={6} xs={12}>
                     <Container>
@@ -37,17 +38,30 @@ function Home(){
             </Row>
         </section>
         <section id="About">
+          <div className="Heading">
+              <h3>About</h3>
+          </div>
            <About/>
         </section>
         <section id="Skills" className="skills">
+        <div className="Heading">
+               <h3>Skills</h3>
+            </div>
           <Skills/>
         </section>
-        <section id="Portfolio">
-            <Portfolio/>
+        <section id="Portfolio" style={{width:"100%"}}>
+            <div className="Heading">
+               <h3>Projects</h3>
+            </div>
+            <Projects/>
         </section>
         <section id="Resume">
+            <div className="Heading">
+               <h3>Resume</h3>
+            </div>
             <Resume/>
         </section>
+        </Container>
         </>
     )
 }
