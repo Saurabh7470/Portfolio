@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Playwrite+AU+QLD:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+.copyright{
+  background-color: rgba(111, 111, 111, 0.836);
+  text-align: center;
+  padding: 30px;
+  margin-top: 30px;  
+  font-family: "Inconsolata", monospace;
+  color: rgba(199, 197, 197, 0.891);
+  font-size: medium;
+}
+
+.other{
+   color: rgb(197, 149, 59);
+   font-weight: bolder;
+}
+
+.icon{
+    color: red;
+}
