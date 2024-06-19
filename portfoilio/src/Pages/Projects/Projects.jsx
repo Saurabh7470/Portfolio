@@ -1,6 +1,6 @@
 import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button, Col, Image, Row } from "react-bootstrap";
+import { Button, Col, Container, Image, Row } from "react-bootstrap";
 import Pcss from './Project.module.css';
 
 function Projects(){
@@ -12,12 +12,13 @@ function Projects(){
     ]
     return(
      <>
+     <Container className="xxl">
         <Row>
             {data.map((item)=>{
                 return(
-                    <Col xs={12} md={6}>
-                        <div className={`card ${Pcss.card}`}>
-                            <Image src={item.imgUrl} alt="#" style={{height:"300px"}} fluid/>
+                    <Col xs={12} md={3}>
+                        <div className={`card ${Pcss.card}`} style={{height:"350px"}}>
+                            <Image src={item.imgUrl} alt="#" fluid/>
                             <div className="card-body">
                                 <h4 className={Pcss.heading}>{item.name}</h4>
                                 <p className={Pcss.type}>{item.Type}</p>
@@ -28,6 +29,7 @@ function Projects(){
                 )
             })}
         </Row>
+    </Container>
      </>
     );
 }

@@ -1,12 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap');
+
 .card{
     margin: 5px;
     padding: 10px;
+    height: 350px;
     background-color: rgb(90, 88, 88);
     color: rgb(180, 180, 180);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.heder{
-    padding: 5px;
-    border-radius: 5px;
+.title{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-decoration: overline;
+    font-family: "Playwrite IS", cursive;
+}
+
+.experience{
+    display: flex;
+}
+
+.card:hover{
+    transform: scale(0.9);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.head{
+    color: rgb(191, 191, 87);
+}
+.duretion{
+    color: white;
 }

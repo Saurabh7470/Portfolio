@@ -17,16 +17,22 @@
 }
 .sidebar{
     max-width: 80%;
+    background-color:  rgb(124, 124, 124);
 }
 
-.nav-link{
+.navlink{
     margin-right: 50px;
+    color: white;
 }
 
-.nav-link:hover{
+.toggle{
+    color: white;
+}
+
+.navlink:hover{
     transition-duration: 1s;
     transition-property: all;
     transform: scale(1);
     color: blue;
-   transition: 1s;
+    transition: 1s;
 }

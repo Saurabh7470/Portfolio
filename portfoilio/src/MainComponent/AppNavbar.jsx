@@ -3,12 +3,12 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { Navbar, Offcanvas,Container, Nav, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { faBars } from "@fortawesome/free-solid-svg-icons/faBars";
-import './Appnavbar.css';
+import appcss from './Appnavbar.module.css';
 import { useEffect, useState } from "react";
 
 function AppNavbar(){
  const [menuOpen, setMenuOpen] = useState(false)
- const [Class, setClass] = useState("navbar")
+ const [Class, setClass] = useState(appcss.navbar)
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)  
@@ -26,10 +26,10 @@ function AppNavbar(){
   useEffect(()=> {
     window.addEventListener('scroll', ()=>{
       if(window.scrollY < 6){
-       setClass("Navbar");
+       setClass(appcss.navbar);
       }
       else{
-        setClass("afterscroll");
+        setClass(appcss.afterscroll);
       }
     });
   });
@@ -37,27 +37,25 @@ function AppNavbar(){
          <>
             <Navbar expand={"sm"} className={`fluid ${Class}`} sticky="top">
               <Container className="sm">
-                <Navbar.Brand href="#" style={{fontFamily:"monospace", fontWeight:"bolder"}}>Portfolio.</Navbar.Brand>
-                <Navbar.Toggle aria-controls="offcanvasNavbar-expand-md" onClick={toggleMenu} className="text">
-                  <FontAwesomeIcon icon={faBars}/>
+                <Navbar.Brand href="#" className={appcss.navlink}>Portfolio.</Navbar.Brand>
+                <Navbar.Toggle aria-controls="offcanvasNavbar-expand-md" onClick={toggleMenu} className={appcss.toggle}>
+                  <FontAwesomeIcon icon={faBars} className={appcss.toggle}/>
                 </Navbar.Toggle>
-                <Navbar.Offcanvas id={`offcanvasNavbar-expand-md`} show={menuOpen} onHide={handleClose} className="sidebar" aria-labelledby={`offcanvasNavbarLabel-expand-md`} placement="start">
-                  <Offcanvas.Header closeButton>
+                <Navbar.Offcanvas id={`offcanvasNavbar-expand-md`} show={menuOpen} onHide={handleClose} className={appcss.sidebar} aria-labelledby={`offcanvasNavbarLabel-expand-md`} placement="start">
+                  <Offcanvas.Header closeButton className={appcss.toggle}>
                     <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`}>
-                      Portfolio
+                       <h5 className={appcss.navlink}>Portfolio</h5>
                     </Offcanvas.Title>
                   </Offcanvas.Header>
-                  <Offcanvas.Body>
-                    <Nav className="justify-content-center flex-grow-1 pe-10 mt-0">
-                      <Link to={'/'} className={'nav-link'} onClick={()=> toggelClose('Home')}>Home</Link>
-                      <Link to={'/'} className="nav-link" onClick={()=> toggelClose('About')}>About</Link>
-                      <Link to={'/'} className="nav-link" onClick={()=> toggelClose('Skills')}>Skills</Link>
-                      <Link to={'/'} className="nav-link" onClick={()=> toggelClose('Portfolio')}>Projects</Link>
-                      <Link to={'/'} className="nav-link" onClick={()=> toggelClose('Resume')}>Resume</Link>
-                    </Nav>
-                    <Nav className="justify-content-end">
-                      <Link to={'Contact'}><Button variant="success" style={{borderRadius:"0px",}}>
-                        <FontAwesomeIcon icon={faPhone}/>  Contact</Button></Link>
+                  <Offcanvas.Body className={appcss.offcanvas}>
+                    <Nav className="justify-content-end flex-grow-1 pe-10 mt-0">
+                      <Link to={'/'} className={`nav-link ${appcss.navlink}`} onClick={()=> toggelClose('Home')}>Home</Link>
+                      <Link to={'/'} className={`nav-link ${appcss.navlink}`} onClick={()=> toggelClose('About')}>About</Link>
+                      <Link to={'/'} className={`nav-link ${appcss.navlink}`} onClick={()=> toggelClose('Skills')}>Skills</Link>
+                      <Link to={'/'} className={`nav-link ${appcss.navlink}`} onClick={()=> toggelClose('Resume')}>Resume</Link>
+                      <Link to={'/'} className={`nav-link ${appcss.navlink}`} onClick={()=> toggelClose('Portfolio')}>Projects</Link>
+                      <Link to={'/'} className={`nav-link ${appcss.navlink}`} onClick={()=> toggelClose('Services')}>Services</Link>
+                      <Link to={'/'} className={`nav-link ${appcss.navlink}`} onClick={()=> toggelClose('Contact')}>Contact</Link>
                     </Nav>
                   </Offcanvas.Body>
                 </Navbar.Offcanvas>

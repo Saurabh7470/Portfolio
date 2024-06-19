@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+.card{
+    padding: 10px;
+    margin: 5px;
+    height: 300px;
+    justify-content: center;
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: rgba(151, 151, 151, 0.494);
+    opacity: 50%;
+    color: white;
+}
+
+.card:hover{
+    box-shadow: 0 5px 5px 0 rgb(246, 243, 243), 0 5px 10px 0 rgb(205, 201, 201);
+    transform: translateY(-5%);
+    transition: 0.5s;
+}
+
+.logo{
+    height: 120px;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.logoimg{
+    height: 80px;
+    width: 80px;
+}

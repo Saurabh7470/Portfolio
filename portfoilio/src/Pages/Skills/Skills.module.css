@@ -1,5 +1,5 @@
 
-.skill-section{
+.skillsection{
   justify-content: space-between;
   padding: 10px;
 }
@@ -13,7 +13,7 @@
     text-align: center;
     font-size: medium;
     text-shadow: 15px;
-    background-color: white;
+    background-color: transparent;
 }
 
 .logo{

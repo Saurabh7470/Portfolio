@@ -1,18 +1,18 @@
 import { Col, Container, Image, Row, Table } from "react-bootstrap";
-import AbImage from "/project/portfoilio/src/Images/About.jpeg";
-import './About.css';
+import AbImage from "../../Images/About.jpeg";
+import abcss from './About.module.css';
 function About(){
     return(
        <>
-         <Container className="AboutContaint">
-            <Row>
+         <Container className="xxxl">
+            <Row className={abcss.AboutContaint}>
                <Col xs={12} md={6}>
-                  <Container className="img-col">
-                     <Image src={AbImage} className="image_logo" alt="#" fluid/>
+                  <Container className={abcss.imgcol}>
+                     <Image src={AbImage} className={abcss.image_logo} alt="#" fluid/>
                   </Container>
                </Col>
-               <Col xs={12} md={6} style={{backgroundColor:"grey", color:"white"}}>
-               <div className="infoAbout">
+               <Col xs={12} md={6}>
+               <div className={abcss.infoAbout}>
                   <h1>About Me</h1>
                   <h3>Software Developer</h3>
                   <h6>
@@ -21,7 +21,7 @@ function About(){
                      atque facere doloribus magnam hic perferendis.
                   </h6>
                   <br/>
-                  <Table className="Details" style={{backgroundColor:"grey"}}>
+                  <Table className={abcss.Details} style={{backgroundColor:"grey"}}>
                      <tbody>
                         <tr>
                            <td>Name :</td>
