@@ -21,9 +21,9 @@ function Contact(){
                <Col xs={12} md={4}>
                   <h4 className={concss.subhead}>Follow Me</h4>
                   <Stack gap={2}>
-                    <Link className={concss.links} to={"https://www.instagram.com/__sen._sahab?igsh=MXI3NGt5YWVsczVxYg=="} target="_blank"><FontAwesomeIcon icon={faInstagram} className={concss.icon}/> Instagram</Link>
+                    <Link className={concss.links} to={"https://www.instagram.com/___sen.__sahab_?igsh=MXI3NGt5YWVsczVxYg=="} target="_blank"><FontAwesomeIcon icon={faInstagram} className={concss.icon}/> Instagram</Link>
                     <Link className={concss.links} to={"https://www.linkedin.com/in/saurabh-sen-a26343259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "} target="_blank"><FontAwesomeIcon icon={faLinkedin} className={concss.icon}/> Linkedin</Link>
-                    <Link className={concss.links} to={"https://www.instagram.com/__sen._sahab?igsh=MXI3NGt5YWVsczVxYg=="} target="_blank"><FontAwesomeIcon icon={faFacebook} className={concss.icon}/> Facebook</Link>
+                    <Link className={concss.links} to={"https://www.facebook.com/saurabh.sen.5688476?mibextid=ZbWKwL"} target="_blank"><FontAwesomeIcon icon={faFacebook} className={concss.icon}/> Facebook</Link>
                   </Stack>
                </Col>
                <Col xs={12} md={4}>

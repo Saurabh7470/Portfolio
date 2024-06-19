@@ -17,7 +17,9 @@
 }
 .sidebar{
     max-width: 80%;
-    background-color:  rgb(124, 124, 124);
+    padding: 15px;
+    text-align: center;
+    font-size: medium;
 }
 
 .navlink{
