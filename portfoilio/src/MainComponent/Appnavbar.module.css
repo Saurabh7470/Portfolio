@@ -8,8 +8,8 @@
 }
 
 .afterscroll{
-    background-color:  rgba(234, 234, 234, 0.5);
-    color: white;
+    background-color:  rgba(234, 234, 234, 0.903);
+    color: rgb(214, 183, 57);
     flex-grow: 100px;
     height: 80px;
     transition: 1s;
@@ -22,7 +22,7 @@
 
 .navlink{
     margin-right: 50px;
-    color: white;
+    color: rgb(224, 164, 53);
 }
 
 .toggle{
@@ -33,6 +33,10 @@
     transition-duration: 1s;
     transition-property: all;
     transform: scale(1);
-    color: blue;
+    color: rgb(204, 153, 58);
     transition: 1s;
+}
+
+.navlink::after{
+    color: rgb(195, 147, 58);
 }

@@ -18,7 +18,7 @@ function Resume(){
     return(
       <>
       <Container>
-        <Row>
+        <Row className="justify-content-evenly">
               <h2 className={Rcss.title}>Education</h2>
                 {Education.map((item)=> {
                   return(
@@ -41,12 +41,9 @@ function Resume(){
                 })
               }
               <h2 className={Rcss.title}>Experience</h2>
-                <Col xs={12} md={6}>
-                  <Image src="https://res.cloudinary.com/practicaldev/image/fetch/s--LZgnTB5p--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/http://empirical-software.engineering/assets/images/developer.png" alt="#" fluid style={{height:"400px"}}/>
-                </Col>
                 {Experience.map((item)=> {
                   return(
-                    <Col xs={12} md={6}>
+                    <Col xs={12} md={4} style={{justifyContent:"center"}}>
                     <div className={`card ${Rcss.card}`}>
                          <div className={`card-hedar ${Rcss.heder}`}>
                              <h4 className={Rcss.head}>{item.Position} </h4>

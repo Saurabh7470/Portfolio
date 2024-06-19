@@ -4,8 +4,9 @@
     margin: 5px;
     padding: 10px;
     height: 350px;
-    background-color: rgb(90, 88, 88);
+    background: rgb(119, 37, 196);
     color: rgb(180, 180, 180);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.568), 0px 5px 15px 0 rgba(255, 255, 255, 0.556);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -23,7 +24,9 @@
 
 .card:hover{
     transform: scale(0.9);
+    box-shadow: none;
     border-radius: 10px;
+    background: transparent;
     transition: 0.5s;
 }
 .head{
