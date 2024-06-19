@@ -1,15 +1,13 @@
-import { Col, Container, Image, Row, Table } from "react-bootstrap";
+import { Button, Col, Container, Image, Row} from "react-bootstrap";
 import AbImage from "../../Images/About.jpeg";
 import abcss from './About.module.css';
 function About(){
     return(
        <>
-         <Container className="xxxl">
-            <Row className={abcss.AboutContaint}>
+         <Container >
+            <Row>
                <Col xs={12} md={6}>
-                  <Container className={abcss.imgcol}>
-                     <Image src={AbImage} className={abcss.image_logo} alt="#" fluid/>
-                  </Container>
+                  <Image src={AbImage} className={abcss.image_logo} alt="#" fluid/>
                </Col>
                <Col xs={12} md={6}>
                <div className={abcss.infoAbout}>
@@ -20,27 +18,32 @@ function About(){
                      Optio asperiores quidem eius. Cupiditate sunt sapiente aut eos nulla impedit aliquam, dolorem voluptates beatae similique,
                      atque facere doloribus magnam hic perferendis.
                   </h6>
-                  <br/>
-                  <Table className={abcss.Details} style={{backgroundColor:"grey"}}>
+                   <table className={abcss.Details}>
                      <tbody>
                         <tr>
-                           <td>Name :</td>
-                           <td>XYZ</td>
+                           <td> <h6>Name: </h6></td>
+                           <td><h6>Saurabh</h6></td>
                         </tr>
                         <tr>
-                           <td>Date of Birth :</td>
-                           <td>11:06:2023</td>
+                           <td> <h6>D-O-B: </h6></td>
+                           <td><h6>13-06-2001</h6></td>
                         </tr>
                         <tr>
-                           <td>Contact :</td>
-                           <td>+91 7884545454</td>
+                           <td> <h6>Address:</h6></td>
+                           <td><h6>Bhopal Madhy Pradesh</h6></td>
                         </tr>
                         <tr>
-                           <td>Email :</td>
-                           <td>Demo@gmail.com</td>
+                           <td> <h6>Contact: </h6></td>
+                           <td><h6>+91 7470446172</h6></td>
+                        </tr>
+                        <tr>
+                           <td> <h6>Email: </h6></td>
+                           <td><h6>Saurabhsen785@gmail.com</h6></td>
                         </tr>
                      </tbody>
-                  </Table>
+                   </table>
+
+                   <Button variant="outline-warning" className={abcss.btn}>Download CV</Button>
                </div>
                </Col>
             </Row>
