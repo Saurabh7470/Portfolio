@@ -1,34 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mukta:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
 
 .AboutContaint{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-.imgcol{
-    padding: 60px;
-}
-
 .image_logo{
     border-color: rgb(197, 192, 192);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 .infoAbout{
-    padding: 40px;
+    padding: 10px;
     padding-top: 60px;
     justify-content: space-between;
-    font-family:'Times New Roman', Times, serif;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 .Details{
-    font-weight: 200;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: whitesmoke;
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 25px;
+    width: 300px;
 }
 
-@media  screen and (max-width:600px) {
-    .infoAbout{
-        padding-top: 10px;
-        font-family:'Times New Roman', Times, serif;
-    }
-    
+.btn{
+    margin-top: 15px;
+    border-radius: 25px;
+    padding: 10px;
 }
