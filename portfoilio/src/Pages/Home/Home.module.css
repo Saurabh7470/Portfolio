@@ -14,19 +14,16 @@
 
 .Heading{
    text-align: center;
-   padding-top: 40px;
-   padding-bottom: 40px;
-   font-weight: 600;
    font-weight: bold;
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    text-decoration:overline;
+   padding: 100px;
+   color: rgb(206, 155, 60);
 }
 
 .textcontaint{
    margin-top: 50px;
    margin-bottom: 10px;
    text-align: center;
-   font-family: "Roboto Mono", monospace;
 }
 
 .allsection{

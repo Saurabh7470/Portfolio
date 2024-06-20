@@ -19,7 +19,7 @@ function Resume(){
       <>
       <Container>
         <Row className="justify-content-evenly">
-              <h2 className={Rcss.title}>Education</h2>
+              <h1 className={Rcss.title}>Education</h1>
                 {Education.map((item)=> {
                   return(
                     <Col xs={12} md={3}>
@@ -40,7 +40,7 @@ function Resume(){
                   )
                 })
               }
-              <h2 className={Rcss.title}>Experience</h2>
+              <h1 className={Rcss.title}>Experience</h1>
                 {Experience.map((item)=> {
                   return(
                     <Col xs={12} md={4} style={{justifyContent:"center"}}>

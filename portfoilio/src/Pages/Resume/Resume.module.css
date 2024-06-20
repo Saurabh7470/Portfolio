@@ -8,15 +8,13 @@
     backdrop-filter: blur(8px);
     color: rgb(205, 203, 203);
     box-shadow: 0 4px 8px 0 rgba(162, 161, 161, 0.264), 0px 5px 15px 0 rgba(163, 163, 163, 0.32);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .title{
-    margin-top: 50px;
-    margin-bottom: 40px;
+    padding: 100px;
     text-align: center;
     text-decoration: overline;
-    font-family: "Playwrite IS", cursive;
+    color: rgb(208, 154, 54);
 }
 
 .experience{

@@ -30,13 +30,13 @@ function Home(){
         </section>
         <section id="About" className={hocss.allsection}>
           <div className={hocss.Heading}>
-              <h3>About</h3>
+              <h1>About</h1>
           </div>
            <About/>
         </section>
         <section id="Skills" className={hocss.allsection}>
         <div className={hocss.Heading}>
-               <h3>Skills</h3>
+               <h1>Skills</h1>
             </div>
           <Skills/>
         </section>
@@ -45,19 +45,19 @@ function Home(){
         </section>
         <section id="Services" className={hocss.allsection}>
             <div className={hocss.Heading}>
-               <h3>Services</h3>
+               <h1>Services</h1>
             </div>
             <Services/>
         </section>
         <section id="Portfolio" className={hocss.allsection}>
             <div className={hocss.Heading}>
-               <h3>Projects</h3>
+               <h1>Projects</h1>
             </div>
             <Projects/>
         </section>
         <section id="Contact" className={hocss.allsection}>
             <div className={hocss.Heading}>
-               <h3>Get In Touch</h3>
+               <h1>Contact</h1>
             </div>
             <Contact/>
         </section>
