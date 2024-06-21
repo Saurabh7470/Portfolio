@@ -1,6 +1,7 @@
 import { Button, Col, Container, Image, Row} from "react-bootstrap";
 import AbImage from "../../Images/About.jpeg";
 import abcss from './About.module.css';
+import resume from '../../data/Updated Resume.pdf';
 function About(){
     return(
        <>
@@ -43,7 +44,7 @@ function About(){
                      </tbody>
                    </table>
 
-                   <Button variant="outline-warning" className={abcss.btn}>Download CV</Button>
+                   <Button variant="outline-warning" href={resume} target="_blank" className={abcss.btn}>Download CV</Button>
                </div>
                </Col>
             </Row>
