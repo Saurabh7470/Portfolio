@@ -13,12 +13,12 @@ function About(){
                <Col xs={12} md={6}>
                <div className={abcss.infoAbout}>
                   <h1>About Me</h1>
-                  <h3>Software Developer</h3>
-                  <h6>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                     Optio asperiores quidem eius. Cupiditate sunt sapiente aut eos nulla impedit aliquam, dolorem voluptates beatae similique,
-                     atque facere doloribus magnam hic perferendis.
-                  </h6>
+                  <h3>I'm Saurabh Sen</h3>
+                  <h5>
+                  I am a passionate and experienced software developer with a strong background in Mobile Application, Software Developermet, Web Designing, Software Architecture etc. 
+                  With over 1 years of hands-on experience in designing, coding, and deploying a variety of software solutions, 
+                  I thrive on solving complex problems and turning innovative ideas into reality.
+                  </h5>
                    <table className={abcss.Details}>
                      <tbody>
                         <tr>
