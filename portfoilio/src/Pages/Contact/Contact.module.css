@@ -26,7 +26,11 @@
 .section{
     padding-bottom: 10px;
     padding-top: 10px;
-    text-align: center;
+    text-align:center;
+}
+
+.lisec{
+    justify-content: space-between;
 }
 
 .links{
@@ -40,6 +44,6 @@
 }
 
 .icon{
-    height: 20px;
-    padding-right: 5px;
+    height: 30px;
+    padding: 5px;
 }

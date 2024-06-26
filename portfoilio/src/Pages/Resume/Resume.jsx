@@ -20,6 +20,10 @@ function Resume(){
       <Container>
         <Row className="justify-content-evenly">
               <h1 className={Rcss.title}>Education</h1>
+                <Col xs={12} md={12}>
+                    <h3 className={Rcss.sub}>My Education has been one of the most significant milestones in my life. It marks the culmination of years of hard work, dedication, and learning. 
+                      I am proud to share my academic journey and the experiences that have shaped who I am today.</h3>  
+                </Col>
                 {Education.map((item)=> {
                   return(
                     <Col xs={12} md={3}>
@@ -30,9 +34,6 @@ function Resume(){
                          </div>
                          <div className="card-body">
                               <h5>{item.Institute}</h5> 
-                                <p>
-                                  {item.Desc}
-                                </p>
                           <span className={Rcss.duretion}><FontAwesomeIcon icon={faCalendar}/> {item.from} {item.to}</span>
                          </div>
                      </div>
@@ -41,6 +42,11 @@ function Resume(){
                 })
               }
               <h1 className={Rcss.title}>Experience</h1>
+                <Col xs={12} md={12}>
+                  <h3 className={Rcss.sub}>Throughout my career, I have had the opportunity to work in diverse roles and industries,
+                     gaining valuable skills and insights. Below are highlights of my professional, internship, 
+                    and volunteer experiences, showcasing my journey and the impact I have made.</h3>
+                </Col>
                 {Experience.map((item)=> {
                   return(
                     <Col xs={12} md={4} style={{justifyContent:"center"}}>

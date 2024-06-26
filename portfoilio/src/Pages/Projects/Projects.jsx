@@ -16,8 +16,8 @@ function Projects(){
         <Row>
             {data.map((item)=>{
                 return(
-                    <Col xs={12} md={3}>
-                        <div className={`card ${Pcss.card}`} style={{height:"350px"}}>
+                    <Col xs={12} md={6}>
+                        <div className={`card ${Pcss.card}`}>
                             <Image src={item.imgUrl} alt="#" fluid/>
                             <div className="card-body">
                                 <h4 className={Pcss.heading}>{item.name}</h4>

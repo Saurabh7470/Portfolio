@@ -57,7 +57,7 @@ function Home(){
         </section>
         <section id="Contact" className={hocss.allsection}>
             <div className={hocss.Heading}>
-               <h1>Contact</h1>
+               <h1>Let's Connect</h1>
             </div>
             <Contact/>
         </section>
