@@ -8,8 +8,8 @@ function Resume(){
   const Education = [
     {Name: "Graduation", Feild:"BCA", Institute:"Govt Hamidiya Arts & Commerce Collage.", Location:"Bhopal, Madhy Pradesh", from:"Aug-2020", to:"Jul-2023", Desc:"I am a univercity topper, good at education of all time and perform good at every univercity examination."},
     {Name: "Post Graducation", Feild:"MCA", Institute:"Oriental Institute of Science & Technology.", Location:"Bhopal, Madhy Pradesh", from:"Aug-2020", to:"Jul-2023", Desc:"I am a univercity topper, good at education of all time and perform good at every univercity examination."},
-    {Name: "Certification", Feild:"Java Full Stack", Institute:"Govt Hamidiya Arts & Commerce Collage.", Location:"Bhopal, Madhy Pradesh", from:"Aug-2020", to:"Jul-2023", Desc:"I am a univercity topper, good at education of all time and perform good at every univercity examination."},
-    {Name: "Certification", Feild:"Digital Marketing", Institute:"Govt Hamidiya Arts & Commerce Collage.", Location:"Bhopal, Madhy Pradesh", from:"Aug-2020", to:"Jul-2023", Desc:"I am a univercity topper, good at education of all time and perform good at every univercity examination."}
+    {Name: "Certification", Feild:"Java Full Stack", Institute:"ABC Technology & Traning.", Location:"Banglore, Karnataka.", from:"Aug-2020", to:"Jul-2023", Desc:"I am a univercity topper, good at education of all time and perform good at every univercity examination."},
+    {Name: "Certification", Feild:"Digital Marketing", Institute:"BECIL Traning Center.", Location:"Bhopal, Madhy Pradesh", from:"Aug-2020", to:"Jul-2023", Desc:"I am a univercity topper, good at education of all time and perform good at every univercity examination."}
   ]
 
   const Experience = [
