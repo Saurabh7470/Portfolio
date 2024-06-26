@@ -3,6 +3,7 @@
 .card{
     margin: 5px;
     padding: 10px;
+    height: 250px;
     background: rgba(255, 252, 252, 0.122);
     backdrop-filter: blur(8px);
     color: rgb(205, 203, 203);
