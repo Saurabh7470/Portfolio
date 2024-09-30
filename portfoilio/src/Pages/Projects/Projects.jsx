@@ -71,6 +71,26 @@ function Projects(){
             ], 
             imgUrl:"https://i.ytimg.com/vi/TwYKwaEjJd4/maxresdefault.jpg",
             Conclusion : "Your Portfolio Website is more than just an online presence; it's your digital persona, showcasing your skills, projects, and professional journey. Developed using React, it offers a sleek, modern, and responsive design that captivates visitors and leaves a lasting impression. This portfolio is a testament to your expertise and dedication, providing a platform for potential clients and employers to explore your work in depth. By presenting your projects and skills in such a compelling way, you set yourself apart from the competition. Elevate your professional brand and make your mark with this stunning portfolio website."
+        },
+        {
+            name: "Chatting Application",
+            description: "The Chatting Application is a database-driven communication platform built using .NET Core Web API for the backend and Blazor Server for the frontend. It allows users to send and receive messages, which are stored and retrieved from a PostgreSQL database. This system supports basic chat functionalities in a secure and scalable manner.",
+            Type: "Web & Mobile",
+            technology: [
+                "UI Components: Utilized MudBlazor for creating a clean and responsive interface with material design principles.",
+                "Frontend: Developed using Blazor Server to provide an interactive user experience with smooth navigation.",
+                "Backend: Powered by a .NET Core Web API, which handles message storage and retrieval.",
+                "Database: PostgreSQL for storing users, messages, and chat room data efficiently."
+            ],
+            benefits: [
+                "Message Persistence: All messages are stored in the PostgreSQL database, ensuring that conversation history is preserved.",
+                "User-Friendly Interface: A modern, responsive UI built with MudBlazor, offering an intuitive chat experience.",
+                "Scalable Design: The architecture is designed to handle increasing user load and message data.",
+                "Secure Communication: Implements secure user authentication and data handling using .NET Core and JWT-based authentication.",
+                "Conversation Management: Allows users to view and manage their conversations effectively, with features like pagination for long chats."
+            ],
+            imgUrl: "https://static.toiimg.com/thumb/msid-107061897,width-1280,height-720,resizemode-4/107061897.jpg",  // Replace with the actual image URL.
+            conclusion: "This Database-Integrated Chatting Application provides a robust and scalable platform for storing and retrieving chat messages, ensuring that conversations are preserved while offering a secure and efficient user experience."
         }
     ]
     const navigate = useNavigate();
@@ -83,9 +103,9 @@ function Projects(){
         <Row>
             {data.map((item)=>{
                 return(
-                    <Col xs={12} md={3}>
+                    <Col xs={12} md={4}>
                         <div className={`card ${Pcss.card}`}>
-                            <Image src={item.imgUrl} alt="#" fluid/>
+                            <Image className={`${Pcss.card-Image}`} src={item.imgUrl} alt="#" fluid/>
                             <div className="card-body">
                                 <h4 className={Pcss.heading}>{item.name}</h4>
                                 <p className={Pcss.type}>{item.Type}</p>

@@ -13,7 +13,8 @@ function Resume(){
   ]
 
   const Experience = [
-    {Position:".Net developer", Organization:"Aon Digicon LLP.", Location:"Korba, Chattisgarh", from:"Aug 2023", to:"Present",desc:"Here i am working as a great person and do the needfull thing for organinzation and cordinate with the others."}
+    {Position:".Net developer", Organization:"Aon Digicon LLP.", Location:"Korba, Chattisgarh", from:"Aug 2023", to:"July 2024",desc:"Here i am working as a great person and do the needfull thing for organinzation and cordinate with the others."},
+    {Position: ".Net Developer", Organization:"Coderlly.", Location:"Bhopal, Madhya Pradesh", from:"Aug 2024", to:"Present", desc:"Here i am working as a DotNet Backend Developer and responsible to make a business logic's and impliment api's for frontend."}
   ]
     return(
       <>
@@ -60,7 +61,7 @@ function Resume(){
                                 <p>
                                   {item.desc}
                                 </p>
-                          <span className={Rcss.duretion}><FontAwesomeIcon icon={faCalendar}/> {item.from} {item.to}</span>
+                          <span className={Rcss.duretion}><FontAwesomeIcon icon={faCalendar}/> {item.from} {"-"} {item.to}</span>
                          </div>
                      </div>
                      </Col>
